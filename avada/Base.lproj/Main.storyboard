@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="0c5-Pi-a60">
+            <objects>
+                <viewController id="QNk-vN-FZU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZOu-V6-4Ef">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.53640061620000001" green="0.29422023889999999" blue="0.29413291809999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="fXf-Bh-rVh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ALO-Y1-2Jv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123" y="617"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="avada" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="109" translatesAutoresizingMaskIntoConstraints="NO" id="aZW-O0-jE6">
+                                <rect key="frame" x="93" y="195" width="228" height="506"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhV-as-be7">
+                                        <rect key="frame" x="0.0" y="0.0" width="228" height="96"/>
+                                        <state key="normal" image="tamada"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDo-Mm-4uY">
+                                        <rect key="frame" x="0.0" y="205" width="228" height="96"/>
+                                        <state key="normal" image="search"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVa-pZ-Ii2">
+                                        <rect key="frame" x="0.0" y="410" width="228" height="96"/>
+                                        <state key="normal" image="guide"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.53243869539999999" green="0.29421833159999999" blue="0.29413166639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aZW-O0-jE6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9M5-AF-qyx"/>
+                            <constraint firstItem="aZW-O0-jE6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ae6-WR-mzN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1272" y="-126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="psh-Wo-o4M">
+            <objects>
+                <viewController id="lPz-K1-Mf7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JQT-HM-JVT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.54036241770000004" green="0.29422211650000002" blue="0.2941342294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="pj9-W2-HCp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RdQ-GN-eRv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123" y="-127"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cmb-zg-If2">
+            <objects>
+                <viewController id="lXK-mq-5Hj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g3X-h9-N8t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.54036241770000004" green="0.29422211650000002" blue="0.2941342294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Tsr-iY-H6j"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGu-Fw-aHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123" y="-848"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="07V-Ar-c3i">
+            <objects>
+                <viewController id="4OA-m8-4cO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dl4-mg-AM5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.53640061620000001" green="0.29422023889999999" blue="0.29413291809999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="q4v-dp-q0q"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Awy-MB-JIF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1125" y="1357"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GBk-Zq-fuX">
+            <objects>
+                <viewController id="fKN-JE-oGz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Hs-lC-zTd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.53640061620000001" green="0.29422023889999999" blue="0.29413291809999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="HL1-GZ-31X"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fG-3n-F5A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-193" y="1357"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="umZ-4l-YEf">
+            <objects>
+                <viewController id="XOL-qQ-309" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iFE-sD-Vj5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.53640061620000001" green="0.29422023889999999" blue="0.29413291809999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="SaX-b7-93e"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQG-aE-KpG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="1357"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="guide" width="228" height="96"/>
+        <image name="search" width="227.33332824707031" height="96"/>
+        <image name="tamada" width="227.33332824707031" height="96"/>
+    </resources>
+</document>

@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05FDCAFF250ED452000A365C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCAFE250ED452000A365C /* AppDelegate.swift */; };
+		05FDCB01250ED452000A365C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCB00250ED452000A365C /* SceneDelegate.swift */; };
+		05FDCB03250ED452000A365C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCB02250ED452000A365C /* ViewController.swift */; };
+		05FDCB06250ED452000A365C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FDCB04250ED452000A365C /* Main.storyboard */; };
+		05FDCB08250ED454000A365C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FDCB07250ED454000A365C /* Assets.xcassets */; };
+		05FDCB0B250ED454000A365C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FDCB09250ED454000A365C /* LaunchScreen.storyboard */; };
+		05FDCB1525169797000A365C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCB1425169797000A365C /* SearchViewController.swift */; };
+		05FDCB17251697C8000A365C /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCB16251697C8000A365C /* GuideViewController.swift */; };
+		05FDCB19251697D8000A365C /* TamadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCB18251697D8000A365C /* TamadaViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05FDCAFB250ED452000A365C /* avada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avada.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05FDCAFE250ED452000A365C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05FDCB00250ED452000A365C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		05FDCB02250ED452000A365C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		05FDCB05250ED452000A365C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05FDCB07250ED454000A365C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05FDCB0A250ED454000A365C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05FDCB0C250ED454000A365C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05FDCB1425169797000A365C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		05FDCB16251697C8000A365C /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		05FDCB18251697D8000A365C /* TamadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamadaViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05FDCAF8250ED452000A365C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05FDCAF2250ED452000A365C = {
+			isa = PBXGroup;
+			children = (
+				05FDCAFD250ED452000A365C /* avada */,
+				05FDCAFC250ED452000A365C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05FDCAFC250ED452000A365C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05FDCAFB250ED452000A365C /* avada.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05FDCAFD250ED452000A365C /* avada */ = {
+			isa = PBXGroup;
+			children = (
+				05FDCAFE250ED452000A365C /* AppDelegate.swift */,
+				05FDCB00250ED452000A365C /* SceneDelegate.swift */,
+				05FDCB02250ED452000A365C /* ViewController.swift */,
+				05FDCB04250ED452000A365C /* Main.storyboard */,
+				05FDCB07250ED454000A365C /* Assets.xcassets */,
+				05FDCB09250ED454000A365C /* LaunchScreen.storyboard */,
+				05FDCB0C250ED454000A365C /* Info.plist */,
+				05FDCB1425169797000A365C /* SearchViewController.swift */,
+				05FDCB16251697C8000A365C /* GuideViewController.swift */,
+				05FDCB18251697D8000A365C /* TamadaViewController.swift */,
+			);
+			path = avada;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05FDCAFA250ED452000A365C /* avada */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05FDCB0F250ED454000A365C /* Build configuration list for PBXNativeTarget "avada" */;
+			buildPhases = (
+				05FDCAF7250ED452000A365C /* Sources */,
+				05FDCAF8250ED452000A365C /* Frameworks */,
+				05FDCAF9250ED452000A365C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = avada;
+			productName = avada;
+			productReference = 05FDCAFB250ED452000A365C /* avada.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05FDCAF3250ED452000A365C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Irakli Grigolia";
+				TargetAttributes = {
+					05FDCAFA250ED452000A365C = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 05FDCAF6250ED452000A365C /* Build configuration list for PBXProject "avada" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05FDCAF2250ED452000A365C;
+			productRefGroup = 05FDCAFC250ED452000A365C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05FDCAFA250ED452000A365C /* avada */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05FDCAF9250ED452000A365C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FDCB0B250ED454000A365C /* LaunchScreen.storyboard in Resources */,
+				05FDCB08250ED454000A365C /* Assets.xcassets in Resources */,
+				05FDCB06250ED452000A365C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05FDCAF7250ED452000A365C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FDCB1525169797000A365C /* SearchViewController.swift in Sources */,
+				05FDCB03250ED452000A365C /* ViewController.swift in Sources */,
+				05FDCAFF250ED452000A365C /* AppDelegate.swift in Sources */,
+				05FDCB17251697C8000A365C /* GuideViewController.swift in Sources */,
+				05FDCB19251697D8000A365C /* TamadaViewController.swift in Sources */,
+				05FDCB01250ED452000A365C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		05FDCB04250ED452000A365C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05FDCB05250ED452000A365C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		05FDCB09250ED454000A365C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05FDCB0A250ED454000A365C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05FDCB0D250ED454000A365C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05FDCB0E250ED454000A365C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05FDCB10250ED454000A365C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D52VX5574L;
+				INFOPLIST_FILE = avada/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tazeey.avada;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05FDCB11250ED454000A365C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D52VX5574L;
+				INFOPLIST_FILE = avada/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tazeey.avada;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05FDCAF6250ED452000A365C /* Build configuration list for PBXProject "avada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FDCB0D250ED454000A365C /* Debug */,
+				05FDCB0E250ED454000A365C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05FDCB0F250ED454000A365C /* Build configuration list for PBXNativeTarget "avada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FDCB10250ED454000A365C /* Debug */,
+				05FDCB11250ED454000A365C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05FDCAF3250ED452000A365C /* Project object */;
+}
