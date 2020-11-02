@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05F7A0FA255047970031BE9E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F7A0F9255047970031BE9E /* RoundButton.swift */; };
 		05FDCAFF250ED452000A365C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCAFE250ED452000A365C /* AppDelegate.swift */; };
 		05FDCB01250ED452000A365C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCB00250ED452000A365C /* SceneDelegate.swift */; };
 		05FDCB03250ED452000A365C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCB02250ED452000A365C /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05F7A0F9255047970031BE9E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		05FDCAFB250ED452000A365C /* avada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FDCAFE250ED452000A365C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05FDCB00250ED452000A365C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				05FDCB1425169797000A365C /* SearchViewController.swift */,
 				05FDCB16251697C8000A365C /* GuideViewController.swift */,
 				05FDCB18251697D8000A365C /* TamadaViewController.swift */,
+				05F7A0F9255047970031BE9E /* RoundButton.swift */,
 			);
 			path = avada;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				05FDCB1525169797000A365C /* SearchViewController.swift in Sources */,
 				05FDCB03250ED452000A365C /* ViewController.swift in Sources */,
+				05F7A0FA255047970031BE9E /* RoundButton.swift in Sources */,
 				05FDCAFF250ED452000A365C /* AppDelegate.swift in Sources */,
 				05FDCB17251697C8000A365C /* GuideViewController.swift in Sources */,
 				05FDCB19251697D8000A365C /* TamadaViewController.swift in Sources */,
