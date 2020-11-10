@@ -31,8 +31,118 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nWU-ek-Z5j">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="do0-kn-itN" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qq-cK-uek" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                <rect key="frame" x="57" y="86.333333333333343" width="300" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="RkD-mu-h13"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="eFf-Sg-AFd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Tamada">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minSize">
+                                                        <real key="value" value="80"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6Qq-cK-uek" firstAttribute="centerY" secondItem="do0-kn-itN" secondAttribute="centerY" id="I6I-df-MKv"/>
+                                            <constraint firstItem="6Qq-cK-uek" firstAttribute="centerX" secondItem="do0-kn-itN" secondAttribute="centerX" id="fCz-6k-0ah"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRJ-qc-kue" userLabel="Middle View">
+                                        <rect key="frame" x="0.0" y="272.66666666666663" width="414" height="272.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhp-ld-dgd" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                <rect key="frame" x="57" y="86.333333333333314" width="300" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="CSI-9m-bzD"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="a75-gt-Fhp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Guide">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minSize">
+                                                        <real key="value" value="80"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zhp-ld-dgd" firstAttribute="centerX" secondItem="JRJ-qc-kue" secondAttribute="centerX" id="dYG-SJ-2rg"/>
+                                            <constraint firstItem="zhp-ld-dgd" firstAttribute="centerY" secondItem="JRJ-qc-kue" secondAttribute="centerY" id="gjg-Tg-6Xp"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-Z3-YNs" userLabel="Bottom View" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="545.33333333333337" width="414" height="272.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfo-9W-Fcj" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                <rect key="frame" x="57" y="86.333333333333258" width="300" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="hr3-5b-7DS"/>
+                                                    <constraint firstAttribute="height" constant="100" id="reG-Km-vLe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Search">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minSize">
+                                                        <real key="value" value="70"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="xfo-9W-Fcj" firstAttribute="centerY" secondItem="Ezy-Z3-YNs" secondAttribute="centerY" id="2La-4M-6vV"/>
+                                            <constraint firstItem="xfo-9W-Fcj" firstAttribute="centerX" secondItem="Ezy-Z3-YNs" secondAttribute="centerX" id="OLS-10-MQX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.90603974580000002" green="0.7982300591" blue="0.61823327589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nWU-ek-Z5j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dq5-i6-7gR"/>
+                            <constraint firstItem="nWU-ek-Z5j" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="J0t-Jc-fgz"/>
+                            <constraint firstItem="nWU-ek-Z5j" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="U7e-dc-tvh"/>
+                            <constraint firstItem="nWU-ek-Z5j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UtU-ya-Qez"/>
+                            <constraint firstItem="nWU-ek-Z5j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vpv-RF-zob"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -117,4 +227,18 @@
             <point key="canvasLocation" x="610" y="1357"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="6Qq-cK-uek">
+            <size key="intrinsicContentSize" width="85" height="100"/>
+        </designable>
+        <designable name="Ezy-Z3-YNs">
+            <size key="intrinsicContentSize" width="0.0" height="20"/>
+        </designable>
+        <designable name="xfo-9W-Fcj">
+            <size key="intrinsicContentSize" width="75.333333333333329" height="100"/>
+        </designable>
+        <designable name="zhp-ld-dgd">
+            <size key="intrinsicContentSize" width="64.333333333333329" height="100"/>
+        </designable>
+    </designables>
 </document>
