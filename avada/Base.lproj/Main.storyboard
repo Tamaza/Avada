@@ -8,12 +8,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Guide View Controller-->
         <scene sceneID="0c5-Pi-a60">
             <objects>
-                <viewController id="QNk-vN-FZU" sceneMemberID="viewController">
+                <viewController id="QNk-vN-FZU" customClass="GuideViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZOu-V6-4Ef">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="fXf-Bh-rVh"/>
                         <color key="backgroundColor" red="0.90603974580000002" green="0.7982300591" blue="0.61823327589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -92,6 +92,9 @@
                                                         <real key="value" value="80"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="QNk-vN-FZU" kind="presentation" id="vmh-in-esx"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
