@@ -16,20 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="Muv-ns-6qm">
-                                <rect key="frame" x="32" y="64" width="350" height="714"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dZ6-Zm-irV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHJ-gX-fto" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="233"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DeW-q3-IIu" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="269.33333333333331"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0y-bX-TZq" customClass="RoundButton" customModule="avada" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="66.666666666666657" width="300" height="100"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9L-mU-7ER" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                <rect key="frame" x="57" y="84.666666666666686" width="300" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="00o-BB-9ju"/>
-                                                    <constraint firstAttribute="width" constant="300" id="j3F-R6-xYD"/>
+                                                    <constraint firstAttribute="height" constant="100" id="5w5-Ck-tRA"/>
+                                                    <constraint firstAttribute="width" constant="300" id="LSA-aw-OIt"/>
                                                 </constraints>
-                                                <state key="normal" title="Sufrastan Qcevis Wesebi"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="ქცევის წესები">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="50"/>
@@ -41,24 +44,30 @@
                                                         <real key="value" value="80"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="4OA-m8-4cO" kind="presentation" id="Kbr-1k-2Xe"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="g0y-bX-TZq" firstAttribute="centerX" secondItem="DHJ-gX-fto" secondAttribute="centerX" id="Ega-KK-IUw"/>
-                                            <constraint firstItem="g0y-bX-TZq" firstAttribute="centerY" secondItem="DHJ-gX-fto" secondAttribute="centerY" id="pF5-OK-AMe"/>
+                                            <constraint firstItem="U9L-mU-7ER" firstAttribute="centerY" secondItem="DeW-q3-IIu" secondAttribute="centerY" id="IdA-Nd-EiL"/>
+                                            <constraint firstItem="U9L-mU-7ER" firstAttribute="centerX" secondItem="DeW-q3-IIu" secondAttribute="centerX" id="WyQ-Sd-dEQ"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RrO-SJ-1Vc" userLabel="Middle View">
-                                        <rect key="frame" x="0.0" y="300" width="350" height="133"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAR-tB-I3I" userLabel="Middle View">
+                                        <rect key="frame" x="0.0" y="269.33333333333337" width="414" height="269.33333333333337"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aer-vB-Ekx" customClass="RoundButton" customModule="avada" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="16.666666666666686" width="300" height="100"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ys0-qQ-dnw" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                <rect key="frame" x="57" y="84.666666666666686" width="300" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="GU6-NS-2NC"/>
-                                                    <constraint firstAttribute="height" constant="100" id="yhz-gT-e23"/>
+                                                    <constraint firstAttribute="height" constant="100" id="ZdK-ae-Pwc"/>
+                                                    <constraint firstAttribute="width" constant="300" id="xMK-84-rXv"/>
                                                 </constraints>
-                                                <state key="normal" title="Dalevis Specifika"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="დალევის სპეციფიკა">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="50"/>
@@ -70,24 +79,30 @@
                                                         <real key="value" value="80"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="fKN-JE-oGz" kind="presentation" id="PzR-ie-c5v"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="aer-vB-Ekx" firstAttribute="centerX" secondItem="RrO-SJ-1Vc" secondAttribute="centerX" id="Hsx-SU-WuG"/>
-                                            <constraint firstItem="aer-vB-Ekx" firstAttribute="centerY" secondItem="RrO-SJ-1Vc" secondAttribute="centerY" id="JAB-jL-MJC"/>
+                                            <constraint firstItem="ys0-qQ-dnw" firstAttribute="centerX" secondItem="PAR-tB-I3I" secondAttribute="centerX" id="jW4-2D-O7l"/>
+                                            <constraint firstItem="ys0-qQ-dnw" firstAttribute="centerY" secondItem="PAR-tB-I3I" secondAttribute="centerY" id="nKV-6f-Y6u"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAY-zF-vs1" userLabel="Bottom View">
-                                        <rect key="frame" x="0.0" y="500" width="350" height="214"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7I-86-KeJ" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="538.66666666666663" width="414" height="269.33333333333337"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egw-6J-ZgD" customClass="RoundButton" customModule="avada" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="57" width="300" height="100"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8w-Tc-EH2" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                <rect key="frame" x="57" y="84.666666666666742" width="300" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="My3-XM-AGH"/>
-                                                    <constraint firstAttribute="height" constant="100" id="UKU-Jm-hvI"/>
+                                                    <constraint firstAttribute="width" constant="300" id="3BY-zs-9Nc"/>
+                                                    <constraint firstAttribute="height" constant="100" id="uyK-el-mOK"/>
                                                 </constraints>
-                                                <state key="normal" title="Sadghegrzelos Tanmimdevroba"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="სადღეგრძელოები">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="50"/>
@@ -99,27 +114,26 @@
                                                         <real key="value" value="80"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="XOL-qQ-309" kind="presentation" id="tUz-IZ-o6F"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="Egw-6J-ZgD" firstAttribute="centerX" secondItem="uAY-zF-vs1" secondAttribute="centerX" id="Sz6-o4-gZv"/>
-                                            <constraint firstItem="Egw-6J-ZgD" firstAttribute="centerY" secondItem="uAY-zF-vs1" secondAttribute="centerY" id="pNP-V8-wJD"/>
+                                            <constraint firstItem="W8w-Tc-EH2" firstAttribute="centerY" secondItem="S7I-86-KeJ" secondAttribute="centerY" id="5UZ-h6-QVY"/>
+                                            <constraint firstItem="W8w-Tc-EH2" firstAttribute="centerX" secondItem="S7I-86-KeJ" secondAttribute="centerX" id="cgM-IB-3PT"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="RrO-SJ-1Vc" firstAttribute="top" secondItem="Muv-ns-6qm" secondAttribute="top" constant="300" id="hwj-l9-gnO"/>
-                                    <constraint firstItem="uAY-zF-vs1" firstAttribute="top" secondItem="Muv-ns-6qm" secondAttribute="top" constant="500" id="lJW-Ru-cPb"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fXf-Bh-rVh"/>
                         <color key="backgroundColor" red="0.90603974580000002" green="0.7982300591" blue="0.61823327589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Muv-ns-6qm" firstAttribute="centerX" secondItem="ZOu-V6-4Ef" secondAttribute="centerX" id="3fL-nu-aVf"/>
-                            <constraint firstItem="Muv-ns-6qm" firstAttribute="centerY" secondItem="ZOu-V6-4Ef" secondAttribute="centerY" id="KLb-on-5iW"/>
-                            <constraint firstItem="Muv-ns-6qm" firstAttribute="top" secondItem="fXf-Bh-rVh" secondAttribute="top" constant="64" id="MpT-zX-WbR"/>
-                            <constraint firstItem="Muv-ns-6qm" firstAttribute="leading" secondItem="fXf-Bh-rVh" secondAttribute="leading" constant="32" id="Ngw-xv-LCc"/>
+                            <constraint firstItem="fXf-Bh-rVh" firstAttribute="bottom" secondItem="dZ6-Zm-irV" secondAttribute="bottom" id="1ap-3i-nSP"/>
+                            <constraint firstItem="dZ6-Zm-irV" firstAttribute="trailing" secondItem="fXf-Bh-rVh" secondAttribute="trailing" id="3xa-UX-jI8"/>
+                            <constraint firstItem="dZ6-Zm-irV" firstAttribute="leading" secondItem="fXf-Bh-rVh" secondAttribute="leading" id="ENU-ZD-xKW"/>
+                            <constraint firstItem="dZ6-Zm-irV" firstAttribute="top" secondItem="fXf-Bh-rVh" secondAttribute="top" id="nI8-Fe-abb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j3J-rG-rmw"/>
@@ -150,7 +164,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="eFf-Sg-AFd"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <state key="normal" title="Tamada">
+                                                <state key="normal" title="თამადა">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -182,7 +196,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="a75-gt-Fhp"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <state key="normal" title="Guide">
+                                                <state key="normal" title="გიდი">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -217,7 +231,7 @@
                                                     <constraint firstAttribute="height" constant="100" id="reG-Km-vLe"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <state key="normal" title="Search">
+                                                <state key="normal" title="ძებნა">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -293,7 +307,7 @@
             <objects>
                 <viewController id="4OA-m8-4cO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dl4-mg-AM5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="q4v-dp-q0q"/>
                         <color key="backgroundColor" red="0.90603974580000002" green="0.7982300591" blue="0.61823327589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -308,7 +322,7 @@
             <objects>
                 <viewController id="fKN-JE-oGz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Hs-lC-zTd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="HL1-GZ-31X"/>
                         <color key="backgroundColor" red="0.90603974580000002" green="0.7982300591" blue="0.61823327589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -323,7 +337,7 @@
             <objects>
                 <viewController id="XOL-qQ-309" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iFE-sD-Vj5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="SaX-b7-93e"/>
                         <color key="backgroundColor" red="0.90603974580000002" green="0.7982300591" blue="0.61823327589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -336,22 +350,22 @@
     </scenes>
     <designables>
         <designable name="6Qq-cK-uek">
-            <size key="intrinsicContentSize" width="85" height="42"/>
+            <size key="intrinsicContentSize" width="94" height="42"/>
         </designable>
-        <designable name="Egw-6J-ZgD">
-            <size key="intrinsicContentSize" width="216" height="30"/>
+        <designable name="U9L-mU-7ER">
+            <size key="intrinsicContentSize" width="167" height="42"/>
         </designable>
-        <designable name="aer-vB-Ekx">
-            <size key="intrinsicContentSize" width="117" height="30"/>
-        </designable>
-        <designable name="g0y-bX-TZq">
-            <size key="intrinsicContentSize" width="172" height="30"/>
+        <designable name="W8w-Tc-EH2">
+            <size key="intrinsicContentSize" width="219" height="42"/>
         </designable>
         <designable name="xfo-9W-Fcj">
-            <size key="intrinsicContentSize" width="76" height="42"/>
+            <size key="intrinsicContentSize" width="68" height="42"/>
+        </designable>
+        <designable name="ys0-qQ-dnw">
+            <size key="intrinsicContentSize" width="242" height="42"/>
         </designable>
         <designable name="zhp-ld-dgd">
-            <size key="intrinsicContentSize" width="65" height="42"/>
+            <size key="intrinsicContentSize" width="60" height="42"/>
         </designable>
     </designables>
 </document>
