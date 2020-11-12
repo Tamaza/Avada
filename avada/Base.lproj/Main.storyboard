@@ -15,8 +15,112 @@
                     <view key="view" contentMode="scaleToFill" id="ZOu-V6-4Ef">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="Muv-ns-6qm">
+                                <rect key="frame" x="32" y="64" width="350" height="714"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHJ-gX-fto" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="233"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0y-bX-TZq" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="66.666666666666657" width="300" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="00o-BB-9ju"/>
+                                                    <constraint firstAttribute="width" constant="300" id="j3F-R6-xYD"/>
+                                                </constraints>
+                                                <state key="normal" title="Sufrastan Qcevis Wesebi"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minSize">
+                                                        <real key="value" value="80"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="g0y-bX-TZq" firstAttribute="centerX" secondItem="DHJ-gX-fto" secondAttribute="centerX" id="Ega-KK-IUw"/>
+                                            <constraint firstItem="g0y-bX-TZq" firstAttribute="centerY" secondItem="DHJ-gX-fto" secondAttribute="centerY" id="pF5-OK-AMe"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RrO-SJ-1Vc" userLabel="Middle View">
+                                        <rect key="frame" x="0.0" y="300" width="350" height="133"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aer-vB-Ekx" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="16.666666666666686" width="300" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="GU6-NS-2NC"/>
+                                                    <constraint firstAttribute="height" constant="100" id="yhz-gT-e23"/>
+                                                </constraints>
+                                                <state key="normal" title="Dalevis Specifika"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minSize">
+                                                        <real key="value" value="80"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="aer-vB-Ekx" firstAttribute="centerX" secondItem="RrO-SJ-1Vc" secondAttribute="centerX" id="Hsx-SU-WuG"/>
+                                            <constraint firstItem="aer-vB-Ekx" firstAttribute="centerY" secondItem="RrO-SJ-1Vc" secondAttribute="centerY" id="JAB-jL-MJC"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAY-zF-vs1" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="500" width="350" height="214"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egw-6J-ZgD" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="57" width="300" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="My3-XM-AGH"/>
+                                                    <constraint firstAttribute="height" constant="100" id="UKU-Jm-hvI"/>
+                                                </constraints>
+                                                <state key="normal" title="Sadghegrzelos Tanmimdevroba"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minSize">
+                                                        <real key="value" value="80"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Egw-6J-ZgD" firstAttribute="centerX" secondItem="uAY-zF-vs1" secondAttribute="centerX" id="Sz6-o4-gZv"/>
+                                            <constraint firstItem="Egw-6J-ZgD" firstAttribute="centerY" secondItem="uAY-zF-vs1" secondAttribute="centerY" id="pNP-V8-wJD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RrO-SJ-1Vc" firstAttribute="top" secondItem="Muv-ns-6qm" secondAttribute="top" constant="300" id="hwj-l9-gnO"/>
+                                    <constraint firstItem="uAY-zF-vs1" firstAttribute="top" secondItem="Muv-ns-6qm" secondAttribute="top" constant="500" id="lJW-Ru-cPb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fXf-Bh-rVh"/>
                         <color key="backgroundColor" red="0.90603974580000002" green="0.7982300591" blue="0.61823327589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Muv-ns-6qm" firstAttribute="centerX" secondItem="ZOu-V6-4Ef" secondAttribute="centerX" id="3fL-nu-aVf"/>
+                            <constraint firstItem="Muv-ns-6qm" firstAttribute="centerY" secondItem="ZOu-V6-4Ef" secondAttribute="centerY" id="KLb-on-5iW"/>
+                            <constraint firstItem="Muv-ns-6qm" firstAttribute="top" secondItem="fXf-Bh-rVh" secondAttribute="top" constant="64" id="MpT-zX-WbR"/>
+                            <constraint firstItem="Muv-ns-6qm" firstAttribute="leading" secondItem="fXf-Bh-rVh" secondAttribute="leading" constant="32" id="Ngw-xv-LCc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j3J-rG-rmw"/>
                 </viewController>
@@ -232,16 +336,22 @@
     </scenes>
     <designables>
         <designable name="6Qq-cK-uek">
-            <size key="intrinsicContentSize" width="85" height="100"/>
+            <size key="intrinsicContentSize" width="85" height="42"/>
         </designable>
-        <designable name="Ezy-Z3-YNs">
-            <size key="intrinsicContentSize" width="0.0" height="20"/>
+        <designable name="Egw-6J-ZgD">
+            <size key="intrinsicContentSize" width="216" height="30"/>
+        </designable>
+        <designable name="aer-vB-Ekx">
+            <size key="intrinsicContentSize" width="117" height="30"/>
+        </designable>
+        <designable name="g0y-bX-TZq">
+            <size key="intrinsicContentSize" width="172" height="30"/>
         </designable>
         <designable name="xfo-9W-Fcj">
-            <size key="intrinsicContentSize" width="75.333333333333329" height="100"/>
+            <size key="intrinsicContentSize" width="76" height="42"/>
         </designable>
         <designable name="zhp-ld-dgd">
-            <size key="intrinsicContentSize" width="64.333333333333329" height="100"/>
+            <size key="intrinsicContentSize" width="65" height="42"/>
         </designable>
     </designables>
 </document>

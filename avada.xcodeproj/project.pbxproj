@@ -48,9 +48,9 @@
 		05E85FC8255B523D00E3FE24 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				05FDCB16251697C8000A365C /* GuideViewController.swift */,
 				05FDCB1425169797000A365C /* SearchViewController.swift */,
 				05FDCB02250ED452000A365C /* ViewController.swift */,
-				05FDCB16251697C8000A365C /* GuideViewController.swift */,
 				05FDCB18251697D8000A365C /* TamadaViewController.swift */,
 			);
 			path = ViewControllers;
