@@ -45,7 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05E85FC8255B523D00E3FE24 /* ViewControllers */ = {
+		05B215C72567597A00D444C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05FDCB04250ED452000A365C /* Main.storyboard */,
+				05FDCB09250ED454000A365C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05B215C925675A7000D444C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05F7A0F9255047970031BE9E /* RoundButton.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05E85FC8255B523D00E3FE24 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				05FDCB16251697C8000A365C /* GuideViewController.swift */,
@@ -53,7 +70,7 @@
 				05FDCB02250ED452000A365C /* ViewController.swift */,
 				05FDCB18251697D8000A365C /* TamadaViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		05FDCAF2250ED452000A365C = {
@@ -75,14 +92,13 @@
 		05FDCAFD250ED452000A365C /* avada */ = {
 			isa = PBXGroup;
 			children = (
-				05E85FC8255B523D00E3FE24 /* ViewControllers */,
+				05B215C925675A7000D444C3 /* Model */,
+				05B215C72567597A00D444C3 /* View */,
+				05E85FC8255B523D00E3FE24 /* Controllers */,
 				05FDCAFE250ED452000A365C /* AppDelegate.swift */,
 				05FDCB00250ED452000A365C /* SceneDelegate.swift */,
-				05FDCB04250ED452000A365C /* Main.storyboard */,
 				05FDCB07250ED454000A365C /* Assets.xcassets */,
-				05FDCB09250ED454000A365C /* LaunchScreen.storyboard */,
 				05FDCB0C250ED454000A365C /* Info.plist */,
-				05F7A0F9255047970031BE9E /* RoundButton.swift */,
 			);
 			path = avada;
 			sourceTree = "<group>";

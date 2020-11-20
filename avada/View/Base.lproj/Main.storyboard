@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -157,15 +157,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="do0-kn-itN" userLabel="Top View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="272.66666666666669"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qq-cK-uek" customClass="RoundButton" customModule="avada" customModuleProvider="target">
-                                                <rect key="frame" x="57" y="86.333333333333343" width="300" height="100"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qq-cK-uek" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                <rect key="frame" x="7" y="61.333333333333314" width="400" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="RkD-mu-h13"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="eFf-Sg-AFd"/>
+                                                    <constraint firstAttribute="height" constant="150" id="RkD-mu-h13"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="eFf-Sg-AFd"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <state key="normal" title="თამადა">
+                                                <state key="normal" image="tamada_image">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -189,15 +188,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRJ-qc-kue" userLabel="Middle View">
                                         <rect key="frame" x="0.0" y="272.66666666666663" width="414" height="272.66666666666663"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhp-ld-dgd" customClass="RoundButton" customModule="avada" customModuleProvider="target">
-                                                <rect key="frame" x="57" y="86.333333333333314" width="300" height="100"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhp-ld-dgd" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                <rect key="frame" x="7" y="61.333333333333314" width="400" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="CSI-9m-bzD"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="a75-gt-Fhp"/>
+                                                    <constraint firstAttribute="height" constant="150" id="CSI-9m-bzD"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="a75-gt-Fhp"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <state key="normal" title="გიდი">
+                                                <state key="normal" image="guide_image">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -224,15 +222,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-Z3-YNs" userLabel="Bottom View" customClass="RoundButton" customModule="avada" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="545.33333333333337" width="414" height="272.66666666666663"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfo-9W-Fcj" customClass="RoundButton" customModule="avada" customModuleProvider="target">
-                                                <rect key="frame" x="57" y="86.333333333333258" width="300" height="100"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfo-9W-Fcj" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                <rect key="frame" x="7" y="61.333333333333258" width="400" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="hr3-5b-7DS"/>
-                                                    <constraint firstAttribute="height" constant="100" id="reG-Km-vLe"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="hr3-5b-7DS"/>
+                                                    <constraint firstAttribute="height" constant="150" id="reG-Km-vLe"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <state key="normal" title="ძებნა">
+                                                <state key="normal" image="search_image">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -407,25 +404,31 @@
     </scenes>
     <designables>
         <designable name="6Qq-cK-uek">
-            <size key="intrinsicContentSize" width="94" height="42"/>
+            <size key="intrinsicContentSize" width="0.0" height="80"/>
+        </designable>
+        <designable name="Ezy-Z3-YNs">
+            <size key="intrinsicContentSize" width="0.0" height="20"/>
         </designable>
         <designable name="U9L-mU-7ER">
-            <size key="intrinsicContentSize" width="167" height="42"/>
+            <size key="intrinsicContentSize" width="167" height="100"/>
         </designable>
         <designable name="W8w-Tc-EH2">
-            <size key="intrinsicContentSize" width="219" height="42"/>
+            <size key="intrinsicContentSize" width="218.66666666666666" height="100"/>
         </designable>
         <designable name="xfo-9W-Fcj">
-            <size key="intrinsicContentSize" width="68" height="42"/>
+            <size key="intrinsicContentSize" width="0.0" height="70"/>
         </designable>
         <designable name="ys0-qQ-dnw">
-            <size key="intrinsicContentSize" width="242" height="42"/>
+            <size key="intrinsicContentSize" width="241.33333333333334" height="100"/>
         </designable>
         <designable name="zhp-ld-dgd">
-            <size key="intrinsicContentSize" width="60" height="42"/>
+            <size key="intrinsicContentSize" width="0.0" height="80"/>
         </designable>
     </designables>
     <resources>
+        <image name="guide_image" width="52.666667938232422" height="52"/>
+        <image name="search_image" width="52.666667938232422" height="52"/>
+        <image name="tamada_image" width="52.666667938232422" height="52"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
