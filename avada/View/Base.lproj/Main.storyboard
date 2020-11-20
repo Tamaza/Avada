@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -14,21 +14,21 @@
             <objects>
                 <viewController id="QNk-vN-FZU" customClass="GuideViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZOu-V6-4Ef">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dZ6-Zm-irV">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="838"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DeW-q3-IIu" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="269.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="279.33333333333331"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9L-mU-7ER" customClass="RoundButton" customModule="avada" customModuleProvider="target">
-                                                <rect key="frame" x="57" y="84.666666666666686" width="300" height="100"/>
+                                                <rect key="frame" x="26.666666666666657" y="64.666666666666686" width="375" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="5w5-Ck-tRA"/>
-                                                    <constraint firstAttribute="width" constant="300" id="LSA-aw-OIt"/>
+                                                    <constraint firstAttribute="height" constant="150" id="5w5-Ck-tRA"/>
+                                                    <constraint firstAttribute="width" constant="375" id="LSA-aw-OIt"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="ქცევის წესები">
@@ -56,14 +56,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAR-tB-I3I" userLabel="Middle View">
-                                        <rect key="frame" x="0.0" y="269.33333333333337" width="414" height="269.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="279.33333333333337" width="428" height="279.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ys0-qQ-dnw" customClass="RoundButton" customModule="avada" customModuleProvider="target">
-                                                <rect key="frame" x="57" y="84.666666666666686" width="300" height="100"/>
+                                                <rect key="frame" x="26.666666666666657" y="64.666666666666686" width="375" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="ZdK-ae-Pwc"/>
-                                                    <constraint firstAttribute="width" constant="300" id="xMK-84-rXv"/>
+                                                    <constraint firstAttribute="height" constant="150" id="ZdK-ae-Pwc"/>
+                                                    <constraint firstAttribute="width" constant="375" id="xMK-84-rXv"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="დალევის სპეციფიკა">
@@ -91,14 +91,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7I-86-KeJ" userLabel="Bottom View">
-                                        <rect key="frame" x="0.0" y="538.66666666666663" width="414" height="269.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="558.66666666666663" width="428" height="279.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8w-Tc-EH2" customClass="RoundButton" customModule="avada" customModuleProvider="target">
-                                                <rect key="frame" x="57" y="84.666666666666742" width="300" height="100"/>
+                                                <rect key="frame" x="26.666666666666657" y="64.666666666666742" width="375" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="3BY-zs-9Nc"/>
-                                                    <constraint firstAttribute="height" constant="100" id="uyK-el-mOK"/>
+                                                    <constraint firstAttribute="width" constant="375" id="3BY-zs-9Nc"/>
+                                                    <constraint firstAttribute="height" constant="150" id="uyK-el-mOK"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="სადღეგრძელოები">
@@ -148,21 +148,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="avada" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nWU-ek-Z5j">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="do0-kn-itN" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="282.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qq-cK-uek" customClass="RoundButton" customModule="avada" customModuleProvider="target">
-                                                <rect key="frame" x="7" y="61.333333333333314" width="400" height="150"/>
+                                                <rect key="frame" x="26.666666666666657" y="66.333333333333314" width="375" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="RkD-mu-h13"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="eFf-Sg-AFd"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="eFf-Sg-AFd"/>
                                                 </constraints>
                                                 <state key="normal" image="tamada_image">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -186,14 +186,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRJ-qc-kue" userLabel="Middle View">
-                                        <rect key="frame" x="0.0" y="272.66666666666663" width="414" height="272.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="282.66666666666663" width="428" height="282.66666666666663"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhp-ld-dgd" customClass="RoundButton" customModule="avada" customModuleProvider="target">
-                                                <rect key="frame" x="7" y="61.333333333333314" width="400" height="150"/>
+                                                <rect key="frame" x="26.666666666666657" y="66.333333333333314" width="375" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="CSI-9m-bzD"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="a75-gt-Fhp"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="a75-gt-Fhp"/>
                                                 </constraints>
                                                 <state key="normal" image="guide_image">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -220,13 +220,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-Z3-YNs" userLabel="Bottom View" customClass="RoundButton" customModule="avada" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="545.33333333333337" width="414" height="272.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="565.33333333333337" width="428" height="282.66666666666663"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfo-9W-Fcj" customClass="RoundButton" customModule="avada" customModuleProvider="target">
-                                                <rect key="frame" x="7" y="61.333333333333258" width="400" height="150"/>
+                                                <rect key="frame" x="26.666666666666657" y="66.333333333333258" width="375" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="hr3-5b-7DS"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="hr3-5b-7DS"/>
                                                     <constraint firstAttribute="height" constant="150" id="reG-Km-vLe"/>
                                                 </constraints>
                                                 <state key="normal" image="search_image">
@@ -243,6 +243,9 @@
                                                         <real key="value" value="70"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="lPz-K1-Mf7" kind="presentation" id="Gaf-RW-KFC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -268,12 +271,12 @@
             </objects>
             <point key="canvasLocation" x="-1272.4637681159422" y="-126.5625"/>
         </scene>
-        <!--View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="psh-Wo-o4M">
             <objects>
-                <viewController id="lPz-K1-Mf7" sceneMemberID="viewController">
+                <viewController id="lPz-K1-Mf7" customClass="SearchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JQT-HM-JVT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="pj9-W2-HCp"/>
                         <color key="backgroundColor" red="0.90603974580000002" green="0.7982300591" blue="0.61823327589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -289,7 +292,7 @@
             <objects>
                 <viewController id="lXK-mq-5Hj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g3X-h9-N8t">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Tsr-iY-H6j"/>
                         <color key="backgroundColor" red="0.90603974580000002" green="0.7982300591" blue="0.61823327589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -305,7 +308,7 @@
             <objects>
                 <viewController id="4OA-m8-4cO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="dl4-mg-AM5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="არ რამე ტექსტი იქნება" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zzc-iB-Z3Q">
@@ -338,7 +341,7 @@
             <objects>
                 <viewController id="fKN-JE-oGz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="5Hs-lC-zTd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fOD-SF-HbG">
@@ -372,7 +375,7 @@
             <objects>
                 <viewController id="XOL-qQ-309" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="iFE-sD-Vj5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AYA-qU-4dm">
