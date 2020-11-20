@@ -6,4 +6,14 @@
 //  Copyright © 2020 Irakli Grigolia. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class TamadaViewController : UIViewController{
+    
+    @IBOutlet weak var TopView: UIView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        TopView.layer.cornerRadius = 5
+        
+    }
+}

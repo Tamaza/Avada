@@ -319,21 +319,165 @@
             </objects>
             <point key="canvasLocation" x="776.63551401869154" y="-127.64578833693305"/>
         </scene>
-        <!--View Controller-->
+        <!--Tamada View Controller-->
         <scene sceneID="cmb-zg-If2">
             <objects>
-                <viewController id="lXK-mq-5Hj" sceneMemberID="viewController">
+                <viewController id="lXK-mq-5Hj" customClass="TamadaViewController" customModule="avada" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g3X-h9-N8t">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KaQ-h3-dI6">
+                                <rect key="frame" x="20" y="124" width="388" height="702"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XdD-E3-Wwd" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="234"/>
+                                        <subviews>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFy-ih-PsU" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="388" height="140"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="tamada_icon">
+                                                    <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minSize">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="შეკრების მიზეზი" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaS-yw-54Y">
+                                                <rect key="frame" x="0.0" y="138" width="388" height="96"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="wFy-ih-PsU" firstAttribute="leading" secondItem="XdD-E3-Wwd" secondAttribute="leading" id="5aB-gh-LtH"/>
+                                            <constraint firstAttribute="bottom" secondItem="wFy-ih-PsU" secondAttribute="bottom" constant="94" id="Pxn-HY-vOX"/>
+                                            <constraint firstAttribute="bottom" secondItem="uaS-yw-54Y" secondAttribute="bottom" id="SST-nf-kmg"/>
+                                            <constraint firstItem="uaS-yw-54Y" firstAttribute="leading" secondItem="XdD-E3-Wwd" secondAttribute="leading" id="bYO-mO-HX6"/>
+                                            <constraint firstAttribute="trailing" secondItem="uaS-yw-54Y" secondAttribute="trailing" id="fnX-Yl-fMw"/>
+                                            <constraint firstAttribute="trailing" secondItem="wFy-ih-PsU" secondAttribute="trailing" id="h26-au-E89"/>
+                                            <constraint firstItem="wFy-ih-PsU" firstAttribute="top" secondItem="XdD-E3-Wwd" secondAttribute="top" id="lLz-qT-WZ8"/>
+                                            <constraint firstItem="uaS-yw-54Y" firstAttribute="top" secondItem="XdD-E3-Wwd" secondAttribute="top" constant="138" id="uJB-M2-7d3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWg-4I-YAX" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="234" width="388" height="234"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wLb-7i-uR9">
+                                                <rect key="frame" x="0.0" y="15" width="388" height="153"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZF-bu-h6D" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="20" width="154" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="ახალი წელი"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="50"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="minSize">
+                                                                <real key="value" value="80"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPG-o4-qjQ" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="103" width="179" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="ახალი შენაძენი"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="50"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbZ-W3-6Bc" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                        <rect key="frame" x="235" y="31" width="179" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="დაბადების დღე"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="50"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="minSize">
+                                                                <real key="value" value="80"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikk-sM-z4t" customClass="RoundButton" customModule="avada" customModuleProvider="target">
+                                                <rect key="frame" x="201" y="118" width="179" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="ბიჭის ნათლობა"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minSize">
+                                                        <real key="value" value="80"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOv-id-qtB" userLabel="Middle View">
+                                        <rect key="frame" x="0.0" y="468" width="388" height="234"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mWg-4I-YAX" firstAttribute="top" secondItem="KaQ-h3-dI6" secondAttribute="top" constant="234" id="y78-ZK-efo"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Tsr-iY-H6j"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tsr-iY-H6j" firstAttribute="bottom" secondItem="KaQ-h3-dI6" secondAttribute="bottom" constant="66" id="aaF-Bk-qrS"/>
+                            <constraint firstItem="KaQ-h3-dI6" firstAttribute="leading" secondItem="g3X-h9-N8t" secondAttribute="leadingMargin" id="clA-CP-CUh"/>
+                            <constraint firstItem="KaQ-h3-dI6" firstAttribute="trailing" secondItem="g3X-h9-N8t" secondAttribute="trailingMargin" id="hE7-yu-IO9"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="E0u-5z-OFz"/>
+                    <connections>
+                        <outlet property="TopView" destination="XdD-E3-Wwd" id="kYS-Dd-6o0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGu-Fw-aHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-123" y="-848"/>
+            <point key="canvasLocation" x="-123.36448598130841" y="-848.16414686825055"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="07V-Ar-c3i">
@@ -344,7 +488,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="არ რამე ტექსტი იქნება" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zzc-iB-Z3Q">
-                                <rect key="frame" x="20" y="129" width="370" height="760"/>
+                                <rect key="frame" x="29" y="129" width="370" height="760"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="760" id="D1P-nw-Sy4"/>
                                     <constraint firstAttribute="width" constant="370" id="uaZ-mM-bWS"/>
@@ -360,7 +504,6 @@
                             <constraint firstItem="Zzc-iB-Z3Q" firstAttribute="top" secondItem="q4v-dp-q0q" secondAttribute="top" constant="41" id="3rL-fO-3yE"/>
                             <constraint firstItem="Zzc-iB-Z3Q" firstAttribute="centerY" secondItem="dl4-mg-AM5" secondAttribute="centerY" id="XOY-nj-WKW"/>
                             <constraint firstItem="Zzc-iB-Z3Q" firstAttribute="centerX" secondItem="dl4-mg-AM5" secondAttribute="centerX" id="jLr-mn-eO8"/>
-                            <constraint firstItem="Zzc-iB-Z3Q" firstAttribute="leading" secondItem="dl4-mg-AM5" secondAttribute="leadingMargin" id="lqx-4g-Sfc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5sG-b3-M6k"/>
@@ -392,7 +535,6 @@
                         <viewLayoutGuide key="safeArea" id="HL1-GZ-31X"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fOD-SF-HbG" firstAttribute="centerY" secondItem="5Hs-lC-zTd" secondAttribute="centerY" id="1Cx-Jv-L92"/>
                             <constraint firstItem="fOD-SF-HbG" firstAttribute="leading" secondItem="5Hs-lC-zTd" secondAttribute="leadingMargin" id="3mv-x2-QxC"/>
                             <constraint firstItem="fOD-SF-HbG" firstAttribute="top" secondItem="HL1-GZ-31X" secondAttribute="top" constant="43" id="4YG-K2-yML"/>
                             <constraint firstItem="fOD-SF-HbG" firstAttribute="centerX" secondItem="5Hs-lC-zTd" secondAttribute="centerX" id="Zar-on-jNr"/>
@@ -408,12 +550,12 @@
         <scene sceneID="umZ-4l-YEf">
             <objects>
                 <viewController id="XOL-qQ-309" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iFE-sD-Vj5">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="iFE-sD-Vj5">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AYA-qU-4dm">
-                                <rect key="frame" x="20" y="125" width="370" height="760"/>
+                                <rect key="frame" x="29" y="125" width="370" height="760"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="760" id="1Ab-aw-2JX"/>
                                     <constraint firstAttribute="width" constant="370" id="pB4-eW-FfR"/>
@@ -427,7 +569,6 @@
                         <viewLayoutGuide key="safeArea" id="SaX-b7-93e"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="AYA-qU-4dm" firstAttribute="leading" secondItem="iFE-sD-Vj5" secondAttribute="leadingMargin" id="OcG-gt-7Af"/>
                             <constraint firstItem="AYA-qU-4dm" firstAttribute="centerY" secondItem="iFE-sD-Vj5" secondAttribute="centerY" id="f3n-yq-3c2"/>
                             <constraint firstItem="AYA-qU-4dm" firstAttribute="top" secondItem="SaX-b7-93e" secondAttribute="top" constant="37" id="kAW-j3-Xpc"/>
                             <constraint firstItem="AYA-qU-4dm" firstAttribute="centerX" secondItem="iFE-sD-Vj5" secondAttribute="centerX" id="vth-80-12K"/>
@@ -462,11 +603,26 @@
         <designable name="6Qq-cK-uek">
             <size key="intrinsicContentSize" width="52.666666666666664" height="52"/>
         </designable>
+        <designable name="DZF-bu-h6D">
+            <size key="intrinsicContentSize" width="92" height="30"/>
+        </designable>
+        <designable name="RbZ-W3-6Bc">
+            <size key="intrinsicContentSize" width="120" height="30"/>
+        </designable>
+        <designable name="SPG-o4-qjQ">
+            <size key="intrinsicContentSize" width="120" height="30"/>
+        </designable>
         <designable name="U9L-mU-7ER">
             <size key="intrinsicContentSize" width="167" height="42"/>
         </designable>
         <designable name="W8w-Tc-EH2">
             <size key="intrinsicContentSize" width="219" height="42"/>
+        </designable>
+        <designable name="ikk-sM-z4t">
+            <size key="intrinsicContentSize" width="119" height="30"/>
+        </designable>
+        <designable name="wFy-ih-PsU">
+            <size key="intrinsicContentSize" width="217.33333333333334" height="79.333333333333329"/>
         </designable>
         <designable name="xfo-9W-Fcj">
             <size key="intrinsicContentSize" width="52.666666666666664" height="52"/>
@@ -481,9 +637,19 @@
     <resources>
         <image name="guide_image" width="52.666667938232422" height="52"/>
         <image name="search_image" width="52.666667938232422" height="52"/>
+        <image name="tamada_icon" width="217.33332824707031" height="79.333335876464844"/>
         <image name="tamada_image" width="52.666667938232422" height="52"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
