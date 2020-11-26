@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05B215D025701CA700D444C3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B215CF25701CA700D444C3 /* Constants.swift */; };
+		05B215D325701D4300D444C3 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B215D225701D4300D444C3 /* Toast.swift */; };
 		05F7A0FA255047970031BE9E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F7A0F9255047970031BE9E /* RoundButton.swift */; };
 		05FDCAFF250ED452000A365C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCAFE250ED452000A365C /* AppDelegate.swift */; };
 		05FDCB01250ED452000A365C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCB00250ED452000A365C /* SceneDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05B215CF25701CA700D444C3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		05B215D225701D4300D444C3 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		05F7A0F9255047970031BE9E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		05FDCAFB250ED452000A365C /* avada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FDCAFE250ED452000A365C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				05F7A0F9255047970031BE9E /* RoundButton.swift */,
+				05B215D225701D4300D444C3 /* Toast.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 				05FDCB00250ED452000A365C /* SceneDelegate.swift */,
 				05FDCB07250ED454000A365C /* Assets.xcassets */,
 				05FDCB0C250ED454000A365C /* Info.plist */,
+				05B215CF25701CA700D444C3 /* Constants.swift */,
 			);
 			path = avada;
 			sourceTree = "<group>";
@@ -181,6 +187,8 @@
 				05FDCB17251697C8000A365C /* GuideViewController.swift in Sources */,
 				05FDCB19251697D8000A365C /* TamadaViewController.swift in Sources */,
 				05FDCB01250ED452000A365C /* SceneDelegate.swift in Sources */,
+				05B215D325701D4300D444C3 /* Toast.swift in Sources */,
+				05B215D025701CA700D444C3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
