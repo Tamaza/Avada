@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		05B215D025701CA700D444C3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B215CF25701CA700D444C3 /* Constants.swift */; };
 		05B215D325701D4300D444C3 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B215D225701D4300D444C3 /* Toast.swift */; };
+		05B215D625701E9500D444C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B215D525701E9500D444C3 /* GoogleService-Info.plist */; };
 		05F7A0FA255047970031BE9E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F7A0F9255047970031BE9E /* RoundButton.swift */; };
 		05FDCAFF250ED452000A365C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCAFE250ED452000A365C /* AppDelegate.swift */; };
 		05FDCB01250ED452000A365C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCB00250ED452000A365C /* SceneDelegate.swift */; };
@@ -19,11 +20,13 @@
 		05FDCB1525169797000A365C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCB1425169797000A365C /* SearchViewController.swift */; };
 		05FDCB17251697C8000A365C /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCB16251697C8000A365C /* GuideViewController.swift */; };
 		05FDCB19251697D8000A365C /* TamadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCB18251697D8000A365C /* TamadaViewController.swift */; };
+		2BEA0C7664340ACABE6B3FA4 /* Pods_avada.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AB12FB6AB9C5AC81242884 /* Pods_avada.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05B215CF25701CA700D444C3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		05B215D225701D4300D444C3 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		05B215D525701E9500D444C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05F7A0F9255047970031BE9E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		05FDCAFB250ED452000A365C /* avada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FDCAFE250ED452000A365C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		05FDCB1425169797000A365C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		05FDCB16251697C8000A365C /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		05FDCB18251697D8000A365C /* TamadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamadaViewController.swift; sourceTree = "<group>"; };
+		27C1BFEB14EADFCE2AFB8F91 /* Pods-avada.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-avada.debug.xcconfig"; path = "Target Support Files/Pods-avada/Pods-avada.debug.xcconfig"; sourceTree = "<group>"; };
+		E480552BAA81BC45724D2377 /* Pods-avada.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-avada.release.xcconfig"; path = "Target Support Files/Pods-avada/Pods-avada.release.xcconfig"; sourceTree = "<group>"; };
+		F9AB12FB6AB9C5AC81242884 /* Pods_avada.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_avada.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BEA0C7664340ACABE6B3FA4 /* Pods_avada.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,8 @@
 			children = (
 				05FDCAFD250ED452000A365C /* avada */,
 				05FDCAFC250ED452000A365C /* Products */,
+				97EE72EB4A894FFCB35733D4 /* Pods */,
+				8FF4ED1A85C0DA0EC3BA9E4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +112,29 @@
 				05FDCAFE250ED452000A365C /* AppDelegate.swift */,
 				05FDCB00250ED452000A365C /* SceneDelegate.swift */,
 				05FDCB07250ED454000A365C /* Assets.xcassets */,
+				05B215D525701E9500D444C3 /* GoogleService-Info.plist */,
 				05FDCB0C250ED454000A365C /* Info.plist */,
 				05B215CF25701CA700D444C3 /* Constants.swift */,
 			);
 			path = avada;
+			sourceTree = "<group>";
+		};
+		8FF4ED1A85C0DA0EC3BA9E4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9AB12FB6AB9C5AC81242884 /* Pods_avada.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97EE72EB4A894FFCB35733D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27C1BFEB14EADFCE2AFB8F91 /* Pods-avada.debug.xcconfig */,
+				E480552BAA81BC45724D2377 /* Pods-avada.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05FDCB0F250ED454000A365C /* Build configuration list for PBXNativeTarget "avada" */;
 			buildPhases = (
+				3F80FF75AAE6DE02E5713909 /* [CP] Check Pods Manifest.lock */,
 				05FDCAF7250ED452000A365C /* Sources */,
 				05FDCAF8250ED452000A365C /* Frameworks */,
 				05FDCAF9250ED452000A365C /* Resources */,
+				7B6CA7BAC7D21AA635A23151 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,12 +198,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				05FDCB0B250ED454000A365C /* LaunchScreen.storyboard in Resources */,
+				05B215D625701E9500D444C3 /* GoogleService-Info.plist in Resources */,
 				05FDCB08250ED454000A365C /* Assets.xcassets in Resources */,
 				05FDCB06250ED452000A365C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F80FF75AAE6DE02E5713909 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-avada-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B6CA7BAC7D21AA635A23151 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-avada/Pods-avada-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-avada/Pods-avada-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-avada/Pods-avada-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		05FDCAF7250ED452000A365C /* Sources */ = {
@@ -330,6 +403,7 @@
 		};
 		05FDCB10250ED454000A365C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27C1BFEB14EADFCE2AFB8F91 /* Pods-avada.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -348,6 +422,7 @@
 		};
 		05FDCB11250ED454000A365C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E480552BAA81BC45724D2377 /* Pods-avada.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
