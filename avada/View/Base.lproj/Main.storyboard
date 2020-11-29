@@ -375,26 +375,27 @@
             </objects>
             <point key="canvasLocation" x="1243" y="-120"/>
         </scene>
-        <!--View Controller-->
+        <!--Toast View Controller-->
         <scene sceneID="HMI-nF-F9o">
             <objects>
-                <viewController id="Rki-cn-van" sceneMemberID="viewController">
+                <viewController id="Rki-cn-van" customClass="ToastViewController" customModule="avada" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o3D-OH-650">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zgS-sP-64x">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zgS-sP-64x">
                                 <rect key="frame" x="20" y="103" width="388" height="613"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="613" id="iC5-ce-XOH"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SA-Ie-8lB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SA-Ie-8lB">
                                 <rect key="frame" x="20" y="20" width="388" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -403,12 +404,26 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CmB-jZ-eBg"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zgS-sP-64x" firstAttribute="top" secondItem="6SA-Ie-8lB" secondAttribute="bottom" constant="8" symbolic="YES" id="8EE-jj-qdT"/>
+                            <constraint firstItem="zgS-sP-64x" firstAttribute="centerX" secondItem="o3D-OH-650" secondAttribute="centerX" id="9Fp-6F-bFx"/>
+                            <constraint firstItem="CmB-jZ-eBg" firstAttribute="bottom" secondItem="zgS-sP-64x" secondAttribute="bottom" constant="88" id="AQK-g0-eth"/>
+                            <constraint firstItem="6SA-Ie-8lB" firstAttribute="centerX" secondItem="o3D-OH-650" secondAttribute="centerX" id="LNe-f5-P79"/>
+                            <constraint firstItem="zgS-sP-64x" firstAttribute="leading" secondItem="6SA-Ie-8lB" secondAttribute="leading" id="UVr-x9-cjT"/>
+                            <constraint firstItem="CmB-jZ-eBg" firstAttribute="trailing" secondItem="zgS-sP-64x" secondAttribute="trailing" constant="20" id="dJN-H6-P6b"/>
+                            <constraint firstItem="6SA-Ie-8lB" firstAttribute="top" secondItem="CmB-jZ-eBg" secondAttribute="top" constant="20" id="mIz-dA-I83"/>
+                            <constraint firstItem="zgS-sP-64x" firstAttribute="leading" secondItem="CmB-jZ-eBg" secondAttribute="leading" constant="20" id="qw3-Yq-IVf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IPq-tq-bor"/>
+                    <connections>
+                        <outlet property="Body" destination="zgS-sP-64x" id="EVV-sd-hhc"/>
+                        <outlet property="Name" destination="6SA-Ie-8lB" id="spd-o4-g3y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPM-Jl-Bzv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2003" y="-121"/>
+            <point key="canvasLocation" x="2001.8691588785045" y="-121.16630669546437"/>
         </scene>
         <!--Tamada View Controller-->
         <scene sceneID="cmb-zg-If2">
@@ -734,17 +749,20 @@
         <designable name="6Qq-cK-uek">
             <size key="intrinsicContentSize" width="46.333333333333336" height="37.333333333333336"/>
         </designable>
+        <designable name="Ezy-Z3-YNs">
+            <size key="intrinsicContentSize" width="0.0" height="20"/>
+        </designable>
         <designable name="U9L-mU-7ER">
-            <size key="intrinsicContentSize" width="167" height="42"/>
+            <size key="intrinsicContentSize" width="167" height="100"/>
         </designable>
         <designable name="W8w-Tc-EH2">
-            <size key="intrinsicContentSize" width="219" height="42"/>
+            <size key="intrinsicContentSize" width="218.66666666666666" height="100"/>
         </designable>
         <designable name="xfo-9W-Fcj">
             <size key="intrinsicContentSize" width="46.333333333333336" height="37.333333333333336"/>
         </designable>
         <designable name="ys0-qQ-dnw">
-            <size key="intrinsicContentSize" width="242" height="42"/>
+            <size key="intrinsicContentSize" width="241.33333333333334" height="100"/>
         </designable>
         <designable name="zhp-ld-dgd">
             <size key="intrinsicContentSize" width="46.333333333333336" height="37.333333333333336"/>

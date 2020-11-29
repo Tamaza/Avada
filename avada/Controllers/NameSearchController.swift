@@ -14,7 +14,7 @@ class NameSearchViewController : UIViewController{
     @IBOutlet weak var SBar: UISearchBar!
     
     @IBOutlet weak var TView: UITableView!
-    
+    var row : Int = 0
     let db = Firestore.firestore()
     var toasts : [Toast] = []
     
@@ -49,7 +49,7 @@ class NameSearchViewController : UIViewController{
                         if let category = data[K.FStore.category] as? String, let name = data[K.FStore.name] as? String, let body = data[K.FStore.body] as? String {
                             let newToast = Toast(category: category, name: name, body: body)
                             self.toasts.append(newToast)
-                            
+                            print(self.toasts)
                             
                             DispatchQueue.main.async {
                                 self.TView.reloadData()
@@ -84,8 +84,24 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 }
 
 extension NameSearchViewController : UITableViewDelegate {
+    
 func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    self.row = indexPath.row
+   
     self.performSegue(withIdentifier: "toToast", sender: self)
+    
 }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is ToastViewController {
+            let vc = segue.destination as! ToastViewController
+            vc.rowFromNSC = self.row
+            vc.toastFromSVC = self.toasts
+          
+           
+                
+            
+        }
+    }
 
 }

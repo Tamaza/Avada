@@ -33,6 +33,7 @@ class SearchViewController : UIViewController{
         TableView.layer.cornerRadius = 15
         SearchBar.layer.cornerRadius = 15
         SearchBar.clipsToBounds = true;
+       
         
         
         super.viewDidLoad()
@@ -57,6 +58,7 @@ class SearchViewController : UIViewController{
                             
                             DispatchQueue.main.async {
                                 self.TableView.reloadData()
+                                print(self.toasts[0].name)
                             }
                         }
                         
@@ -107,7 +109,9 @@ extension SearchViewController : UITableViewDataSource{
 }
 
 extension SearchViewController : UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         self.performSegue(withIdentifier: "toToastScreen", sender: self)
     }
     

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		059DD3A0257193C500918E0E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059DD39F257193C500918E0E /* SearchViewController.swift */; };
 		059DD3B8257414CE00918E0E /* NameSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059DD3B7257414CE00918E0E /* NameSearchController.swift */; };
+		059DD3BB2574283300918E0E /* ToastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059DD3BA2574283300918E0E /* ToastViewController.swift */; };
 		05B215D025701CA700D444C3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B215CF25701CA700D444C3 /* Constants.swift */; };
 		05B215D325701D4300D444C3 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B215D225701D4300D444C3 /* Toast.swift */; };
 		05B215D625701E9500D444C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B215D525701E9500D444C3 /* GoogleService-Info.plist */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		059DD39F257193C500918E0E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		059DD3B7257414CE00918E0E /* NameSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSearchController.swift; sourceTree = "<group>"; };
+		059DD3BA2574283300918E0E /* ToastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastViewController.swift; sourceTree = "<group>"; };
 		05B215CF25701CA700D444C3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		05B215D225701D4300D444C3 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		05B215D525701E9500D444C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				05FDCB18251697D8000A365C /* TamadaViewController.swift */,
 				059DD39F257193C500918E0E /* SearchViewController.swift */,
 				059DD3B7257414CE00918E0E /* NameSearchController.swift */,
+				059DD3BA2574283300918E0E /* ToastViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				059DD3BB2574283300918E0E /* ToastViewController.swift in Sources */,
 				05FDCB03250ED452000A365C /* ViewController.swift in Sources */,
 				05F7A0FA255047970031BE9E /* RoundButton.swift in Sources */,
 				05FDCAFF250ED452000A365C /* AppDelegate.swift in Sources */,
