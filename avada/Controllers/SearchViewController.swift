@@ -18,21 +18,27 @@ class SearchViewController : UIViewController{
     @IBOutlet weak var TableView: UITableView!
     
     let db = Firestore.firestore()
+    var c = ""
+    var r = 0
 
 //    var toasts : [Toast] = [
-//        Toast(category: "შერეული", name: "ცრემლები", body: "მოდით ამ ჭიქით ხავსმოკიდებულ ეკლესიას,ამ ეკლესიაში დანთებულ სანთელს,ამ სანთლის წინ დაღვრილ ცრემლებს და ამ ცრემლებში განდობილ,საიდუმლოს გაუმარჯოს.")
+//        Toast(category: "შერეული", name: "ცრემლები", body: "მოდით ამ ჭიქით ხავსმოკიდებულ ეკლესიას,ამ ეკლესიაში დანთებულ სანთელს,ამ სანთლის წინ დაღვრილ ცრემლებს და ამ ცრემლებში განდობილ,საიდუმლოს გაუმარჯოს."),
+//        Toast(category: "მანდილოსნების", name: "მშვენება მანდილოსანი", body: "ცის მშვენება არწივს, წყლის მშვენება ორაგულს, კლდის მშვენება ჯიხვს, ტყის მშვენება ირემს და სუფრის მშვენება მანდილოსანს გაუმარჯოს.")
 //
 //    ]
     var toasts : [Toast] = []
     
     override func viewDidLoad() {
-        //upload()
+       
         loadData()
         TableView.dataSource = self
         TableView.delegate = self
         TableView.layer.cornerRadius = 15
         SearchBar.layer.cornerRadius = 15
         SearchBar.clipsToBounds = true;
+        
+       
+       // upload()
        
         
         
@@ -69,12 +75,25 @@ class SearchViewController : UIViewController{
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is NameSearchViewController {
+            let vc = segue.destination as! NameSearchViewController
+            vc.categoryFromSVC = self.c
+            
+          
+           
+                
+            
+        }
+    }
+    
     
     func upload(){
+        for i in 0...1 {
         db.collection(K.FStore.collectionName).addDocument(data: [
-          K.FStore.category: toasts[0].category,
-          K.FStore.name : toasts[0].name,
-            K.FStore.body : toasts[0].body
+          K.FStore.category: toasts[i].category,
+          K.FStore.name : toasts[i].name,
+            K.FStore.body : toasts[i].body
         ]) {(error) in
             if let e = error {
                 print("There was an issue uploading data to firestore, \(e)")
@@ -82,6 +101,7 @@ class SearchViewController : UIViewController{
             else {
                 print("Successfully uploaded data")
             }
+        }
         }
         
     }
@@ -111,6 +131,8 @@ extension SearchViewController : UITableViewDataSource{
 extension SearchViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.r = indexPath.row
+        self.c = self.toasts[r].category
         
         self.performSegue(withIdentifier: "toToastScreen", sender: self)
     }

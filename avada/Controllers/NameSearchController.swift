@@ -15,11 +15,12 @@ class NameSearchViewController : UIViewController{
     
     @IBOutlet weak var TView: UITableView!
     var row : Int = 0
+    var categoryFromSVC = ""
     let db = Firestore.firestore()
     var toasts : [Toast] = []
     
     override func viewDidLoad() {
-        //upload()
+       
         loadData()
         TView.dataSource = self
         TView.delegate = self
@@ -30,6 +31,19 @@ class NameSearchViewController : UIViewController{
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is ToastViewController {
+            let vc = segue.destination as! ToastViewController
+            vc.rowFromNSC = self.row
+            vc.toastFromSVC = self.toasts
+          
+           
+                
+            
+        }
     }
     
     
@@ -47,12 +61,14 @@ class NameSearchViewController : UIViewController{
                     for doc in snapshotDocuments {
                         let data = (doc.data())
                         if let category = data[K.FStore.category] as? String, let name = data[K.FStore.name] as? String, let body = data[K.FStore.body] as? String {
+                            if category == self.categoryFromSVC {
                             let newToast = Toast(category: category, name: name, body: body)
                             self.toasts.append(newToast)
                             print(self.toasts)
                             
                             DispatchQueue.main.async {
                                 self.TView.reloadData()
+                            }
                             }
                         }
                         
@@ -92,16 +108,6 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
 }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.destination is ToastViewController {
-            let vc = segue.destination as! ToastViewController
-            vc.rowFromNSC = self.row
-            vc.toastFromSVC = self.toasts
-          
-           
-                
-            
-        }
-    }
+  
 
 }
