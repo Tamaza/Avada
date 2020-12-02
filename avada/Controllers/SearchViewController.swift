@@ -10,7 +10,7 @@
 import UIKit
 import Firebase
 
-class SearchViewController : UIViewController{
+class SearchViewController : UIViewController, UISearchBarDelegate{
     
    
     @IBOutlet weak var SearchBar: UISearchBar!
@@ -20,6 +20,9 @@ class SearchViewController : UIViewController{
     let db = Firestore.firestore()
     var c = ""
     var r = 0
+    var categoryNames : [String] = []
+    var searchdata: [String]!
+    var searching = false
 
 //    var toasts : [Toast] = [
 //        Toast(category: "შერეული", name: "ცრემლები", body: "მოდით ამ ჭიქით ხავსმოკიდებულ ეკლესიას,ამ ეკლესიაში დანთებულ სანთელს,ამ სანთლის წინ დაღვრილ ცრემლებს და ამ ცრემლებში განდობილ,საიდუმლოს გაუმარჯოს."),
@@ -29,14 +32,19 @@ class SearchViewController : UIViewController{
     var toasts : [Toast] = []
     
     override func viewDidLoad() {
+        
+        
        
         loadData()
         TableView.dataSource = self
         TableView.delegate = self
         TableView.layer.cornerRadius = 15
         SearchBar.layer.cornerRadius = 15
-        SearchBar.clipsToBounds = true;
         
+        SearchBar.delegate = self
+        SearchBar.clipsToBounds = true;
+     
+       
        
        // upload()
        
@@ -60,14 +68,26 @@ class SearchViewController : UIViewController{
                         if let category = data[K.FStore.category] as? String, let name = data[K.FStore.name] as? String, let body = data[K.FStore.body] as? String {
                             let newToast = Toast(category: category, name: name, body: body)
                             self.toasts.append(newToast)
+                            print(self.toasts.count)
                             
                             
                             DispatchQueue.main.async {
                                 self.TableView.reloadData()
-                                print(self.toasts[0].name)
+                                
+                                
+                                
+                                    
+
+                                }
                             }
-                        }
+                       
                         
+                    }
+                    for i in 0...self.toasts.count-1{
+                        
+                        self.categoryNames.append( self.toasts[i].category)
+                        self.searchdata = self.categoryNames
+                     
                     }
                 }
                 
@@ -87,9 +107,19 @@ class SearchViewController : UIViewController{
         }
     }
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+
+        
+        searchdata = categoryNames.filter({$0.prefix(searchText.count) == searchText})
+        searching = true
+        TableView.reloadData()
+   }
+    
+    
+    
     
     func upload(){
-        for i in 0...1 {
+        for i in 0...1-1 {
         db.collection(K.FStore.collectionName).addDocument(data: [
           K.FStore.category: toasts[i].category,
           K.FStore.name : toasts[i].name,
@@ -116,13 +146,28 @@ class SearchViewController : UIViewController{
 extension SearchViewController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return toasts.count
+        
+        if searching {
+            return searchdata.count
+        }
+        else {
+            return categoryNames.count
+        }
+      
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
         
-        cell.textLabel?.text = toasts[indexPath.row].category
+        if searching{
+            cell.textLabel?.text = searchdata[indexPath.row]
+        }
+        else {
+            cell.textLabel?.text = categoryNames[indexPath.row]
+
+        }
+        
+        
         return cell
     }
     

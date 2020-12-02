@@ -18,6 +18,9 @@ class NameSearchViewController : UIViewController{
     var categoryFromSVC = ""
     let db = Firestore.firestore()
     var toasts : [Toast] = []
+    var toastNames : [String] = []
+    var searchdata: [String]!
+    var searching = false
     
     override func viewDidLoad() {
        
@@ -73,11 +76,25 @@ class NameSearchViewController : UIViewController{
                         }
                         
                     }
+                    for i in 0...self.toasts.count-1{
+                        
+                        self.toastNames.append( self.toasts[i].name)
+                        self.searchdata = self.toastNames
+                     
+                    }
                 }
                 
             }
         }
     }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+
+        
+        searchdata = toastNames.filter({$0.prefix(searchText.count) == searchText})
+        searching = true
+        TView.reloadData()
+   }
     
     
     
@@ -86,16 +103,30 @@ class NameSearchViewController : UIViewController{
 
 extension NameSearchViewController : UITableViewDataSource{
 
-func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return toasts.count
-}
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if searching {
+            return searchdata.count
+        }
+        else {
+            return toastNames.count
+        }
+      
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier2, for: indexPath)
+        
+        if searching{
+            cell.textLabel?.text = searchdata[indexPath.row]
+        }
+        else {
+            cell.textLabel?.text = toastNames[indexPath.row]
 
-func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier2, for: indexPath)
-    
-    cell.textLabel?.text = toasts[indexPath.row].name
-    return cell
-}
+        }
+        
+        
+        return cell
+    }
 
 }
 

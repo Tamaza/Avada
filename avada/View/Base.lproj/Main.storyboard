@@ -747,7 +747,7 @@
     </scenes>
     <designables>
         <designable name="6Qq-cK-uek">
-            <size key="intrinsicContentSize" width="46.333333333333336" height="37.333333333333336"/>
+            <size key="intrinsicContentSize" width="0.0" height="80"/>
         </designable>
         <designable name="Ezy-Z3-YNs">
             <size key="intrinsicContentSize" width="0.0" height="20"/>
@@ -759,13 +759,13 @@
             <size key="intrinsicContentSize" width="218.66666666666666" height="100"/>
         </designable>
         <designable name="xfo-9W-Fcj">
-            <size key="intrinsicContentSize" width="46.333333333333336" height="37.333333333333336"/>
+            <size key="intrinsicContentSize" width="0.0" height="70"/>
         </designable>
         <designable name="ys0-qQ-dnw">
             <size key="intrinsicContentSize" width="241.33333333333334" height="100"/>
         </designable>
         <designable name="zhp-ld-dgd">
-            <size key="intrinsicContentSize" width="46.333333333333336" height="37.333333333333336"/>
+            <size key="intrinsicContentSize" width="0.0" height="80"/>
         </designable>
     </designables>
     <resources>
