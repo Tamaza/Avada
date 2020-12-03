@@ -26,10 +26,13 @@ class SearchViewController : UIViewController, UISearchBarDelegate{
 
 //    var toasts : [Toast] = [
 //        Toast(category: "შერეული", name: "ცრემლები", body: "მოდით ამ ჭიქით ხავსმოკიდებულ ეკლესიას,ამ ეკლესიაში დანთებულ სანთელს,ამ სანთლის წინ დაღვრილ ცრემლებს და ამ ცრემლებში განდობილ,საიდუმლოს გაუმარჯოს."),
-//        Toast(category: "მანდილოსნების", name: "მშვენება მანდილოსანი", body: "ცის მშვენება არწივს, წყლის მშვენება ორაგულს, კლდის მშვენება ჯიხვს, ტყის მშვენება ირემს და სუფრის მშვენება მანდილოსანს გაუმარჯოს.")
-//
+//        Toast(category: "მანდილოსნების", name: "მშვენება მანდილოსანი", body: "ცის მშვენება არწივს, წყლის მშვენება ორაგულს, კლდის მშვენება ჯიხვს, ტყის მშვენება ირემს და სუფრის მშვენება მანდილოსანს გაუმარჯოს."),
+//        Toast(category: "ახალი წელი", name: "თოვლის ბაბუ და ფიფქია", body: "გაუმარჯოს თოვლის ბაბუას და ფიფქიას: არც ბერდებიან, არც ავად ხდებიან, ფულიც ყოველთვის აქვთ საჩურების საყიდლად. მოდით, ჩვენც მათნაირები ვყოფილიყავით!"),
+//        Toast(category: "დაბადების დღე", name: "იმ ლამაზ ღამეს", body: "დაბადების დღის იმ ლამაზ ღამეს,შენი აკვნისთვის ღმერთს უკოცნია,დიდხანს სიცოცხლე შენთვის ცოტაა, დიდი სიცოცხლე დამილოცია, ცისარტყელა აკისკისდა,მიებჯინა კლდეს...თოლიები ზღვის ნაპირზე ნაზად კრავენ წრეს წვიმას იწყებს და წვეთები უღიმიან მზეს...გეფერები და გილოცავ დაბადების დღეს"),
+//        Toast(category: "ახალი შენაძენი", name: "დიმპიტაური", body: "აბა მოდით იმ ახალ შენაძენს გაუმარჯოს რომელმაც აქ ყველა შეგვკვრიბა და დიდი ხნის უნახავი მეგობრები გვანახა, მოდი იმ შენაძენს გაუმარჯოს წარმოდგენა რო არ გვაქვს რა არის მარა დალევა გცინდა კამანდას"),
+//        Toast(category: "ბიჭის ნათლობა", name: "ჯან-ღონე", body: "აბა დღეს მოინათლა ჩვენი საყვარელი (ნათლულის სახელი), გაუმარჯოს და სულ კარგ გზაზე ეაროს, ეშმაკი რომ შეხვდება ჩემსკენ გამოუშვას შობელძაღლს ვიცნობ მე კარად, მე მოვუვლი")
 //    ]
-    var toasts : [Toast] = []
+   var toasts : [Toast] = []
     
     override func viewDidLoad() {
         
@@ -46,7 +49,7 @@ class SearchViewController : UIViewController, UISearchBarDelegate{
      
        
        
-       // upload()
+        //upload()
        
         
         
@@ -73,11 +76,7 @@ class SearchViewController : UIViewController, UISearchBarDelegate{
                             
                             DispatchQueue.main.async {
                                 self.TableView.reloadData()
-                                
-                                
-                                
-                                    
-
+           
                                 }
                             }
                        
@@ -119,7 +118,7 @@ class SearchViewController : UIViewController, UISearchBarDelegate{
     
     
     func upload(){
-        for i in 0...1-1 {
+        for i in 0...toasts.count-1{
         db.collection(K.FStore.collectionName).addDocument(data: [
           K.FStore.category: toasts[i].category,
           K.FStore.name : toasts[i].name,

@@ -49,9 +49,7 @@ class NameSearchViewController : UIViewController{
         }
     }
     
-    
-    
-    
+
     func loadData(){
         
         toasts = []
