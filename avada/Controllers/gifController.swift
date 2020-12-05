@@ -16,7 +16,7 @@ class gifController : UIViewController {
     
   
     override func viewDidLoad() {
-        imageView.loadGif(name: "jeremy")
+        //imageView.loadGif(name: "jeremy")
         
     }
     

@@ -28,11 +28,16 @@ class TamadaViewController : UIViewController{
     @IBOutlet weak var BottomView: UIView!
     
     @IBOutlet weak var startButton: UIButton!
-    var time : Int = 0
+    var time : Int!
     var category : String!
     
     override func viewDidLoad() {
+        time = 0
+        category = ""
+        startButton.isEnabled = false
         super.viewDidLoad()
+        
+        
         
     
     
@@ -61,6 +66,13 @@ class TamadaViewController : UIViewController{
         
     }
     
+    
+     func check(){
+        if self.time != 0 && self.category != ""{
+            startButton.isEnabled = true
+        }
+    }
+    
     @IBAction func newYear(_ sender: Any) {
         category = ""
         category = "ახალი წელი"
@@ -81,22 +93,26 @@ class TamadaViewController : UIViewController{
     @IBAction func boyNatloba(_ sender: Any) {
         category = ""
         category = "ბიჭის ნათლობა"
+        check()
     }
     
     
     @IBAction func tenMin(_ sender: Any) {
         time = 10
+        check()
     }
     
     
     
     @IBAction func fifteenMin(_ sender: Any) {
         time = 15
+        check()
     }
     
     
     @IBAction func twentyMin(_ sender: Any) {
         time = 20
+        check()
     }
     
     
@@ -112,6 +128,8 @@ func roundBottomCorners(cornerRadius: Double, view : UIView) {
     view.clipsToBounds = true
     view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
 }
+    
+    
     
     
 }
