@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0573322D257B083F004E34DB /* gifController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573322C257B083F004E34DB /* gifController.swift */; };
 		059DD3A0257193C500918E0E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059DD39F257193C500918E0E /* SearchViewController.swift */; };
 		059DD3B8257414CE00918E0E /* NameSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059DD3B7257414CE00918E0E /* NameSearchController.swift */; };
 		059DD3BB2574283300918E0E /* ToastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059DD3BA2574283300918E0E /* ToastViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0573322C257B083F004E34DB /* gifController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifController.swift; sourceTree = "<group>"; };
 		059DD39F257193C500918E0E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		059DD3B7257414CE00918E0E /* NameSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSearchController.swift; sourceTree = "<group>"; };
 		059DD3BA2574283300918E0E /* ToastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				059DD39F257193C500918E0E /* SearchViewController.swift */,
 				059DD3B7257414CE00918E0E /* NameSearchController.swift */,
 				059DD3BA2574283300918E0E /* ToastViewController.swift */,
+				0573322C257B083F004E34DB /* gifController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				059DD3B8257414CE00918E0E /* NameSearchController.swift in Sources */,
 				05FDCB17251697C8000A365C /* GuideViewController.swift in Sources */,
 				05FDCB19251697D8000A365C /* TamadaViewController.swift in Sources */,
+				0573322D257B083F004E34DB /* gifController.swift in Sources */,
 				05FDCB01250ED452000A365C /* SceneDelegate.swift in Sources */,
 				05B215D325701D4300D444C3 /* Toast.swift in Sources */,
 				05B215D025701CA700D444C3 /* Constants.swift in Sources */,
