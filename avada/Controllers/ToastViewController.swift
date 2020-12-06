@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 
+
 class ToastViewController : UIViewController {
     
     @IBOutlet weak var Name: UILabel!
@@ -22,6 +23,7 @@ class ToastViewController : UIViewController {
     var toastFromSVC  : [Toast] = []
     var fromTCCategory : String!
     var fromTCTime : Int!
+    var num : [Int] = []
     
    
     
@@ -72,12 +74,21 @@ class ToastViewController : UIViewController {
                             
                             
                             
+                            
                             }
                        
                         
                     }
                  
                 }
+                for  i in 0...self.toasts.count-1{
+                
+                    if self.toasts[i].category.contains(self.fromTCCategory!) {
+                        self.num.append(i)
+                       
+                     
+                    }
+            }
                 
             }
          
@@ -85,11 +96,14 @@ class ToastViewController : UIViewController {
             for  i in 0...self.toasts.count-1{
             
                 if self.toasts[i].category.contains(self.fromTCCategory!) {
-                   // var  random : Int = Int.random(in: 1..<toasts[i].
-                    self.name = self.toasts[i].name
+                    
+                    var  random  = num.randomElement()
+                    print(random, "randomsdsadsa")
+                        
+                    self.name = self.toasts[random!].name
                     self.Name.text = name
                     
-                    self.body = self.toasts[i].body
+                    self.body = self.toasts[random!].body
                     self.Body.text = body
                     
                     
