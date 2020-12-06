@@ -389,12 +389,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="613" id="iC5-ce-XOH"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SA-Ie-8lB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SA-Ie-8lB">
                                 <rect key="frame" x="20" y="20" width="388" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -605,7 +604,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="43J-x5-qB0" kind="show" identifier="toGifScreen2" id="7YM-Kq-mK3"/>
+                                                    <action selector="segue" destination="lXK-mq-5Hj" eventType="touchUpInside" id="vs0-0A-5Ek"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -651,8 +650,7 @@
                         <outlet property="button6" destination="Xvu-vt-kx4" id="gON-mK-j0o"/>
                         <outlet property="button7" destination="Slt-pk-JUb" id="zo9-uO-NFs"/>
                         <outlet property="startButton" destination="v3V-Dk-z6t" id="fgb-8B-8O7"/>
-                        <segue destination="43J-x5-qB0" kind="showDetail" identifier="toGifScreen1" id="L44-Xn-sAK"/>
-                        <segue destination="Rki-cn-van" kind="showDetail" identifier="toToastScreen" id="8Y8-EN-Qc0"/>
+                        <segue destination="Rki-cn-van" kind="show" identifier="toToastScreen" id="8Y8-EN-Qc0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGu-Fw-aHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -664,11 +662,11 @@
             <objects>
                 <viewController id="43J-x5-qB0" customClass="gifController" customModule="avada" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ME-Lb-M6L">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="KfR-4r-e0r">
-                                <rect key="frame" x="48" y="184" width="332" height="261"/>
+                                <rect key="frame" x="48" y="228" width="332" height="305"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EB2-HQ-hWQ"/>
@@ -689,7 +687,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IF8-Gx-nsv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586.9158878504672" y="-881.20950323974091"/>
+            <point key="canvasLocation" x="1815" y="-1033"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="07V-Ar-c3i">
@@ -838,8 +836,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="7YM-Kq-mK3"/>
-        <segue reference="Jmk-LY-r6r"/>
+        <segue reference="8Y8-EN-Qc0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="guide_blacl" width="46.333332061767578" height="37.333332061767578"/>

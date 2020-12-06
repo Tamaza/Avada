@@ -66,6 +66,10 @@ class TamadaViewController : UIViewController{
         
     }
     
+    @IBAction func segue(){
+    self.performSegue(withIdentifier: "toToastScreen", sender: self)
+    }
+
     
      func check(){
         if self.time != 0 && self.category != ""{
@@ -129,6 +133,21 @@ func roundBottomCorners(cornerRadius: Double, view : UIView) {
     view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
 }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is ToastViewController {
+            let vc = segue.destination as! ToastViewController
+            vc.fromTCCategory = self.category
+            vc.fromTCTime = self.time
+            
+         
+            
+          
+           
+                
+            
+        }
+    }
     
     
     
