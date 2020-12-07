@@ -26,6 +26,7 @@ class ToastViewController : UIViewController {
     var fromTCCategory : String!
     var fromTCTime : Int!
     var num : [Int] = []
+    var time : Int!
     
    
     
@@ -41,7 +42,7 @@ class ToastViewController : UIViewController {
             continueBTN.isHidden = true
         }
         
-        if fromTCTime == nil {
+        if self.time == nil && self.fromTCTime == nil {
         name = toastFromSVC[rowFromNSC].name
         Name.text = name
         body = toastFromSVC[rowFromNSC].body
@@ -49,6 +50,12 @@ class ToastViewController : UIViewController {
             
         }
         else{
+            if self.time == nil{
+            self.time = fromTCTime
+            }
+            else {
+                self.fromTCTime = self.time
+            }
             toastFromSVC = []
             print("loading data...")
             loadData()
@@ -81,20 +88,15 @@ class ToastViewController : UIViewController {
                         if let category = data[K.FStore.category] as? String, let name = data[K.FStore.name] as? String, let body = data[K.FStore.body] as? String {
                             let newToast = Toast(category: category, name: name, body: body)
                             self.toasts.append(newToast)
-                            print(self.toasts.count)
-                            
-                            
-                            
-                            
-                            
+                            print(self.toasts.count,"counti ibani vroot")
+       
                             }
-                       
-                        
+           
                     }
                  
                 }
                 for  i in 0...self.toasts.count-1{
-                
+                                    
                     if self.toasts[i].category.contains(self.fromTCCategory!) {
                         self.num.append(i)
                        
@@ -110,7 +112,6 @@ class ToastViewController : UIViewController {
                 if self.toasts[i].category.contains(self.fromTCCategory!) {
                     
                     var  random  = num.randomElement()
-                    print(random, "randomsdsadsa")
                         
                     self.name = self.toasts[random!].name
                     self.Name.text = name
@@ -132,8 +133,18 @@ class ToastViewController : UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is gifController {
+            print(self.time,"timessee")
             let vc = segue.destination as! gifController
-            vc.timeFromTC = self.fromTCTime
+            
+            if self.fromTCTime != nil {
+                vc.timeFromTC = self.fromTCTime
+                
+            }
+            else{
+                vc.timeFromTC = self.time
+                
+            }
+            vc.categoryFromTC = self.fromTCCategory
   
             
           
