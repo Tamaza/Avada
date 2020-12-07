@@ -14,6 +14,8 @@ class ToastViewController : UIViewController {
     
     @IBOutlet weak var Name: UILabel!
     
+    @IBOutlet weak var continueBTN: UIButton!
+    
     @IBOutlet weak var Body: UITextView!
     let db = Firestore.firestore()
     var toasts : [Toast] = []
@@ -29,10 +31,15 @@ class ToastViewController : UIViewController {
     
     override func viewDidLoad() {
         
-
+        
+        continueBTN.layer.cornerRadius = 15
         Name.layer.cornerRadius = 15
         Body.layer.cornerRadius = 15
         Name.layer.masksToBounds = true
+        
+        if toastFromSVC.isEmpty == false{
+            continueBTN.isHidden = true
+        }
         
         if fromTCTime == nil {
         name = toastFromSVC[rowFromNSC].name
@@ -42,6 +49,7 @@ class ToastViewController : UIViewController {
             
         }
         else{
+            toastFromSVC = []
             print("loading data...")
             loadData()
         
@@ -54,6 +62,10 @@ class ToastViewController : UIViewController {
         
     }
     
+    
+    @IBAction func continueBTN(_ sender: Any) {
+        self.performSegue(withIdentifier: "toGifController", sender: self)
+    }
     
     func loadData(){
      
@@ -115,6 +127,19 @@ class ToastViewController : UIViewController {
                 }
                 
             }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is gifController {
+            let vc = segue.destination as! gifController
+            vc.timeFromTC = self.fromTCTime
+  
+            
+          
+           
+                
+            
         }
     }
     

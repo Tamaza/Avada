@@ -12,12 +12,20 @@ import SwiftGifOrigin
 class gifController : UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
-    let jeremyGif = UIImage.gif(name: "jeremy")
+    var timeFromTC : Double = 0
+    
     
   
     override func viewDidLoad() {
         //imageView.loadGif(name: "jeremy")
         
+    }
+    
+//    let timer = Timer.scheduledTimer(timeInterval: , target: self, selector: #selector(fire), userInfo: nil, repeats: true)
+
+    @objc func fire()
+    {
+        print("FIRE!!!")
     }
     
     //An animated UIImage
