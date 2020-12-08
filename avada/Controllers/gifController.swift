@@ -20,6 +20,7 @@ class gifController : UIViewController {
   
     override func viewDidLoad() {
         //imageView.loadGif(name: "jeremy")
+        self.navigationItem.setHidesBackButton(true, animated: true)
        print(timeFromTC,"timee")
         if timeFromTC == 10 {
         let timer = Timer.scheduledTimer(timeInterval: 3 , target: self, selector: #selector(fire), userInfo: nil, repeats: false)
@@ -43,13 +44,11 @@ class gifController : UIViewController {
     @objc func fire()
     {
         print("going to toast controller...")
-        self.performSegue(withIdentifier: "toToast", sender: self)
+       // self.performSegue(withIdentifier: "toToast", sender: self)
+        self.navigationController?.popViewController(animated: true)
     }
     
-    //An animated UIImage
-   
 
-    // A UIImageView with async loading
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -27,10 +27,19 @@ class ToastViewController : UIViewController {
     var fromTCTime : Int!
     var num : [Int] = []
     var time : Int!
+    var backButton : UIBarButtonItem!
     
    
     
     override func viewDidLoad() {
+        
+        self.navigationController?.interactivePopGestureRecognizer!.isEnabled = false
+
+//             // Replace the default back button
+//            self.navigationItem.setHidesBackButton(true, animated: false)
+//        self.backButton = UIBarButtonItem(title: "< Back", style: UIBarButtonItem.Style.plain, target: self, action: "goBack")
+//            self.navigationItem.leftBarButtonItem = backButton
+        
         
         
         continueBTN.layer.cornerRadius = 15
@@ -68,7 +77,10 @@ class ToastViewController : UIViewController {
         
         
     }
-    
+    func goBack() {
+        
+        self.performSegue(withIdentifier: "toTamadaController", sender: self)
+        }
     
     @IBAction func continueBTN(_ sender: Any) {
         self.performSegue(withIdentifier: "toGifController", sender: self)
@@ -146,12 +158,11 @@ class ToastViewController : UIViewController {
             }
             vc.categoryFromTC = self.fromTCCategory
   
-            
-          
-           
-                
+      
             
         }
+        
+        
     }
     
    
