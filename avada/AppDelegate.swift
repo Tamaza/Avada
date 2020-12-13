@@ -25,6 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.sound, .alert, .badge], categories: nil))
+
+        application.beginBackgroundTask(withName: "showNotification", expirationHandler: nil)
+
+            return true
+        }
 
     // MARK: UISceneSession Lifecycle
 

@@ -28,11 +28,12 @@ class ToastViewController : UIViewController {
     var num : [Int] = []
     var time : Int!
     var backButton : UIBarButtonItem!
+    var newToast : [Toast] = []
     
    
     
     override func viewDidLoad() {
-        
+        print("shemovedi sceneshi")
         self.navigationController?.interactivePopGestureRecognizer!.isEnabled = false
 
 //             // Replace the default back button
@@ -73,10 +74,57 @@ class ToastViewController : UIViewController {
           
         }
         
-        
-        
-        
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("shemovedi sceneshi")
+        self.navigationController?.interactivePopGestureRecognizer!.isEnabled = false
+
+//             // Replace the default back button
+//            self.navigationItem.setHidesBackButton(true, animated: false)
+//        self.backButton = UIBarButtonItem(title: "< Back", style: UIBarButtonItem.Style.plain, target: self, action: "goBack")
+//            self.navigationItem.leftBarButtonItem = backButton
+        
+        
+        
+        continueBTN.layer.cornerRadius = 15
+        Name.layer.cornerRadius = 15
+        Body.layer.cornerRadius = 15
+        Name.layer.masksToBounds = true
+        
+        if toastFromSVC.isEmpty == false{
+            continueBTN.isHidden = true
+        }
+        
+        if self.time == nil && self.fromTCTime == nil {
+        name = toastFromSVC[rowFromNSC].name
+        Name.text = name
+        body = toastFromSVC[rowFromNSC].body
+            Body.text = body
+            
+        }
+        else{
+            if self.time == nil{
+            self.time = fromTCTime
+            }
+            else {
+                self.fromTCTime = self.time
+            }
+            toastFromSVC = []
+            print("loading data...")
+            loadData()
+        
+   
+          
+        }
+        
+
+    }
+    
+    
+    
+    
     func goBack() {
         
         self.performSegue(withIdentifier: "toTamadaController", sender: self)
@@ -100,7 +148,7 @@ class ToastViewController : UIViewController {
                         if let category = data[K.FStore.category] as? String, let name = data[K.FStore.name] as? String, let body = data[K.FStore.body] as? String {
                             let newToast = Toast(category: category, name: name, body: body)
                             self.toasts.append(newToast)
-                            print(self.toasts.count,"counti ibani vroot")
+    
        
                             }
            
@@ -110,8 +158,16 @@ class ToastViewController : UIViewController {
                 for  i in 0...self.toasts.count-1{
                                     
                     if self.toasts[i].category.contains(self.fromTCCategory!) {
+                        self.newToast.append(self.toasts[i])
+                        print(self.newToast,"new toastsadsadsad")
+                        if self.num.contains(i){
+                            
+                            continue
+                        }
+                        else {
                         self.num.append(i)
-                       
+                            print(self.num, "nuummm")
+                        }
                      
                     }
             }
@@ -123,12 +179,15 @@ class ToastViewController : UIViewController {
             
                 if self.toasts[i].category.contains(self.fromTCCategory!) {
                     
-                    var  random  = num.randomElement()
-                        
-                    self.name = self.toasts[random!].name
+                    
+                    var  random  = Int.random(in: 0..<num.count)
+                        print (num, "nummmmm")
+                        print (random,"randooooom")
+                    print(self.toasts.count,"toasssttt")
+                    self.name = self.toasts[random].name
                     self.Name.text = name
                     
-                    self.body = self.toasts[random!].body
+                    self.body = self.toasts[random].body
                     self.Body.text = body
                     
                     
