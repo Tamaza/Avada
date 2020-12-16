@@ -14,6 +14,9 @@
 		05B215D025701CA700D444C3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B215CF25701CA700D444C3 /* Constants.swift */; };
 		05B215D325701D4300D444C3 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B215D225701D4300D444C3 /* Toast.swift */; };
 		05B215D625701E9500D444C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B215D525701E9500D444C3 /* GoogleService-Info.plist */; };
+		05B7844B2587CF730077B5CE /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7844A2587CF730077B5CE /* RegisterController.swift */; };
+		05B7844E2587CFAE0077B5CE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7844D2587CFAE0077B5CE /* LoginViewController.swift */; };
+		05B784512587D08C0077B5CE /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B784502587D08C0077B5CE /* StartScreenViewController.swift */; };
 		05F7A0FA255047970031BE9E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F7A0F9255047970031BE9E /* RoundButton.swift */; };
 		05FDCAFF250ED452000A365C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCAFE250ED452000A365C /* AppDelegate.swift */; };
 		05FDCB01250ED452000A365C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCB00250ED452000A365C /* SceneDelegate.swift */; };
@@ -34,6 +37,9 @@
 		05B215CF25701CA700D444C3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		05B215D225701D4300D444C3 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		05B215D525701E9500D444C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		05B7844A2587CF730077B5CE /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		05B7844D2587CFAE0077B5CE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		05B784502587D08C0077B5CE /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		05F7A0F9255047970031BE9E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		05FDCAFB250ED452000A365C /* avada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FDCAFE250ED452000A365C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +96,9 @@
 				059DD3B7257414CE00918E0E /* NameSearchController.swift */,
 				059DD3BA2574283300918E0E /* ToastViewController.swift */,
 				0573322C257B083F004E34DB /* gifController.swift */,
+				05B7844A2587CF730077B5CE /* RegisterController.swift */,
+				05B7844D2587CFAE0077B5CE /* LoginViewController.swift */,
+				05B784502587D08C0077B5CE /* StartScreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -261,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05B7844E2587CFAE0077B5CE /* LoginViewController.swift in Sources */,
 				059DD3BB2574283300918E0E /* ToastViewController.swift in Sources */,
 				05FDCB03250ED452000A365C /* ViewController.swift in Sources */,
 				05F7A0FA255047970031BE9E /* RoundButton.swift in Sources */,
@@ -269,8 +279,10 @@
 				059DD3B8257414CE00918E0E /* NameSearchController.swift in Sources */,
 				05FDCB17251697C8000A365C /* GuideViewController.swift in Sources */,
 				05FDCB19251697D8000A365C /* TamadaViewController.swift in Sources */,
+				05B784512587D08C0077B5CE /* StartScreenViewController.swift in Sources */,
 				0573322D257B083F004E34DB /* gifController.swift in Sources */,
 				05FDCB01250ED452000A365C /* SceneDelegate.swift in Sources */,
+				05B7844B2587CF730077B5CE /* RegisterController.swift in Sources */,
 				05B215D325701D4300D444C3 /* Toast.swift in Sources */,
 				05B215D025701CA700D444C3 /* Constants.swift in Sources */,
 			);
