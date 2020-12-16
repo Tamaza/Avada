@@ -1,2 +1,2 @@
 # Avada
-Avada drinking iOS app
+Drinking iOS app (learning swift and XCode)
