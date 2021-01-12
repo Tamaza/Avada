@@ -1,2 +1,3 @@
 # Avada
-Drinking iOS app (learning swift and XCode)
+
+Me trying to learn about mobile development
